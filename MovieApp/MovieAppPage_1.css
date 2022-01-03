@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 ::selection {
     background-color: red;
     color: whitesmoke;
@@ -28,9 +29,18 @@ body {
 }
 
 .header_logo {
+    width: 200px;
     font-size: 32px;
     text-decoration: none;
     color: #ffffff;
+    background: #ffd80e;
+    border-radius: 5px;
+    text-align: center;
+    transition-property: background, box-shadow;
+}
+
+.header_logo:hover {
+    box-shadow: 0 0 30px #2E94E3;
 }
 
 .header_search {
@@ -38,6 +48,7 @@ body {
     border: 2px solid #1a191f;
     border-radius: 5px;
     outline: none;
+    width: 300px;
 }
 
 .movies {

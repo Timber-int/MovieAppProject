@@ -35,6 +35,12 @@ function showMovies(data) {
         const movieEl = document.createElement("div");
         movieEl.classList.add('movie');
 
+        movieEl.onclick = function (e) {
+            e.preventDefault();
+
+            location.href = `MovieAppPage_2.html?movie=${JSON.stringify(movie)}`;
+        }
+
         movieEl.innerHTML = ` 
  <div class="movie_cover-inner">
 <img 
